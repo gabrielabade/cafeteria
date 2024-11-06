@@ -36,23 +36,14 @@ header {
 .elements-header {
   display: flex;
   justify-content: space-between;
-  /* Para desktop, logo à esquerda e navbar à direita */
   align-items: center;
   padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: auto;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  /* Centraliza a logo */
-  align-items: center;
-  width: 100%;
-}
-
 .logo img {
-  width: 250px;
+  width: 100%;
   display: block;
 }
 
