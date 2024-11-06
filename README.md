@@ -21,8 +21,5 @@ Este repositório contém o código-fonte da landing page de uma cafeteria. O de
 
 ## Deploy
 
-Veja a landing page em funcionamento [aqui](https://devysonsilva.github.io/Dev-cafe/).
+Veja a landing page em funcionamento [aqui](https://gabrielabade.github.io/cafeteria/).
 
-## Contribuição
-
-Sinta-se à vontade para abrir um Pull Request ou Issue caso tenha sugestões ou encontre bugs.# cafeteria
