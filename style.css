@@ -36,14 +36,34 @@ header {
 .elements-header {
   display: flex;
   justify-content: space-between;
+  /* Para desktop, logo à esquerda e navbar à direita */
   align-items: center;
   padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: auto;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  /* Centraliza a logo */
+  align-items: center;
+  width: 100%;
+}
+
 .logo img {
-  width: 150px;
+  width: 250px;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: transparent;
+  transform: none;
+  transition: none;
+  margin-left: auto;
 }
 
 .navbar a {
@@ -65,8 +85,9 @@ header {
   cursor: pointer;
 }
 
+/* Home Container - Corrigido para garantir exibição da imagem de fundo */
 .home-container {
-  background: url("../assets/home-img.jpg") center/cover no-repeat;
+  background: url("assets/home-img.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -78,15 +99,14 @@ header {
   font-size: 4rem;
   color: var(--white);
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  padding: 0 1rem;
 }
 
 .home-container p {
   font-size: 2rem;
   color: var(--white);
   margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 0 1rem;
 }
 
 .btn {
@@ -145,7 +165,6 @@ header {
   font-size: 2rem;
   color: var(--white);
   margin-bottom: 20px;
-
 }
 
 .about .content p {
@@ -157,7 +176,7 @@ header {
 
 .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -233,18 +252,26 @@ header {
     text-align: center;
   }
 
-  .logo img {
-    width: 220px;
+  .logo {
+    display: flex;
+    justify-content: center;
+    /* Garante que a logo será centralizada */
+    align-items: center;
+    width: 100%;
   }
 
-  .logo {
-    margin: 0 auto;
+  .logo img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar {
     display: flex;
     flex-direction: column;
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: var(--bg);
@@ -276,7 +303,6 @@ header {
     flex-direction: column;
   }
 
-
   .menu .box,
   .review .box {
     padding: 1.5rem;
@@ -288,30 +314,23 @@ header {
     width: 90%;
     height: auto;
   }
+
+  /* Garantindo que a imagem de fundo apareça no mobile */
+  .home-container {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
 }
 
 @media (min-width: 768px) {
-
   .elements-header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+    /* Para desktop, logo à esquerda e navbar à direita */
   }
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: transparent;
-    transform: none;
-    transition: none;
-  }
-
-  .menu-btn {
-    display: none;
+  .logo img {
+    width: 200px;
   }
 
   .home-container h1 {
@@ -321,7 +340,15 @@ header {
 
 @media (min-width: 1024px) {
   .logo img {
-    width: 250px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .elements-header {
+    justify-content: space-between;
+    /* Para desktop, logo à esquerda e navbar à direita */
   }
 
   .home-container {
