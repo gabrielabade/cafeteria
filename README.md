@@ -23,3 +23,5 @@ Este repositório contém o código-fonte da landing page de uma cafeteria. O de
 
 Veja a landing page em funcionamento [aqui](https://gabrielabade.github.io/cafeteria/).
 
+![Preview do projeto](./assets/mockup.png)
+

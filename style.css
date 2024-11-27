@@ -88,6 +88,7 @@ header {
 
 .home-container h1 {
   font-size: 4rem;
+  text-shadow: 0px 2px 3px var(--main-color);
   color: var(--white);
   margin-bottom: 1rem;
   padding: 0 1rem;
@@ -95,6 +96,7 @@ header {
 
 .home-container p {
   font-size: 2rem;
+  text-shadow: 0px 2px 3px var(--main-color);
   color: var(--white);
   margin-bottom: 2rem;
   padding: 0 1rem;
@@ -118,9 +120,10 @@ header {
 
 .title {
   font-size: 4rem;
+  text-shadow: 0px 2px 3px #666;
   color: var(--main-color);
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .title span {
@@ -190,6 +193,7 @@ header {
 .menu .box h3,
 .review .box h3 {
   color: var(--white);
+  text-shadow: 0px 2px 3px #666;
   font-size: 2rem;
   margin: 1rem 0;
 }
@@ -203,7 +207,7 @@ header {
 .menu .box:hover,
 .review .box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(177, 174, 150, 0.548);
 }
 
 .review .box p {
@@ -217,6 +221,13 @@ header {
   height: 450px;
   border: none;
   border-radius: 0.5rem;
+}
+
+.address p {
+  font-size: 1.5rem;
+  text-shadow: 0px 2px 3px #666;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer {
